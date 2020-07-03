@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+    <div class="menuDiv">
+        <img src="img/menuPlanet.png" alt="planet" class="imgPlanet">
+        <img src="img/spaceship.png" alt="ship" class="imgShip one">
+        <img src="img/alien3.png" alt="ship" class="imgShip two">
+
+        <div class="tableDiv">
+            <div class="tableWrapper">
+            <div onclick="tableScore()" class="start score">Close</div>
+
+            </div>
+        </div>  
+        <div class="container">
+            <input type="longtext" class = "nickname" placeholder="Enter your name">
+            <div onclick="startHash()" class="start">Start</div>
+            <div onclick="tableScore()" class="start score">Top scores</div>
+        </div>
+    </div>
+
+    <div class="gameDiv">
+        <div class="nickInfo"></div>
+        <div class="bang"></div>
+        <div class="healthPoint"></div>
+        <canvas  class="gameCanvas"></canvas>
+    </div>
+
+    <div class="gameOverDiv">
+        <img src="img/Game_Over.1.png" alt="game_over" class="overImg">
+        <div class="container">
+         <div class="overInfo"></div>
+        <div onclick="startMenuHash ()" class="start">Play again</div>
+        </div>
+    </div>
+
+    <script src="js/zepto.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/bonus.js"></script>
+    <script src="js/ship.js"></script>
+    <script src="js/control.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/fire.js"></script>
+    <script src="js/star.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
